@@ -104,19 +104,19 @@ python3 pc.py https://vulnerable.site --no-verify -d 4
 
 脚本运行后会生成以下文件：
 
-### 1. `crawl_results_[domain]_[timestamp].txt`
+### 1. crawl_results_[domain]_[timestamp].txt
 
 - 人类可读的格式
 - 包含统计信息和URL列表
 - 按HTTP状态码分组显示
 
-### 2. `crawl_results_[domain]_[timestamp].json`
+### 2. crawl_results_[domain]_[timestamp].json
 
 - 结构化数据
 - 包含完整的响应信息
 - 适合进一步自动化处理
 
-### 3. `crawl_results_[domain]_[timestamp]_urls.txt`
+### 3. crawl_results_[domain]_[timestamp]_urls.txt
 
 - 纯URL列表
 - 可直接用于其他工具输入
