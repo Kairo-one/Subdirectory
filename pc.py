@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-增强版网站爬虫 - 安全测试专用（修复版）
-功能：更全面的爬取，支持多种发现和输出格式
+网站爬虫 - 安全测试专用
 """
 
 import requests
@@ -18,7 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 class AdvancedWebCrawler:
     def __init__(self, base_url, max_depth=5, max_workers=5, delay=0.2):
         """
-        初始化增强爬虫
+        初始化爬虫
         
         Args:
             base_url: 起始URL
@@ -505,7 +504,7 @@ class AdvancedWebCrawler:
             traceback.print_exc()
 
 def main():
-    parser = argparse.ArgumentParser(description='增强版网站爬虫 - 靶场专用')
+    parser = argparse.ArgumentParser(description='网站爬虫 - 靶场专用')
     parser.add_argument('url', help='目标URL (例如: http://example.com)')
     parser.add_argument('-d', '--depth', type=int, default=3, help='爬取深度 (默认: 3)')
     parser.add_argument('-t', '--threads', type=int, default=5, help='线程数 (默认: 5)')
@@ -515,7 +514,7 @@ def main():
     args = parser.parse_args()
     
     print("=" * 60)
-    print("            增强版网站爬虫 - 安全测试专用")
+    print("            网站爬虫 - 靶场专用")
     print("=" * 60)
     
     # 禁用SSL警告（如果是HTTPS）
